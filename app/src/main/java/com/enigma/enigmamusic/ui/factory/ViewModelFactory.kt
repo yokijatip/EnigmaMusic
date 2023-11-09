@@ -3,6 +3,7 @@ package com.enigma.enigmamusic.ui.factory
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.enigma.enigmamusic.repository.Repository
+import com.enigma.enigmamusic.ui.screen.detail.DetailViewModel
 import com.enigma.enigmamusic.ui.screen.home.HomeViewModel
 
 class ViewModelFactory(private val repository: Repository) :
@@ -12,6 +13,8 @@ class ViewModelFactory(private val repository: Repository) :
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(HomeViewModel::class.java)) {
             return HomeViewModel(repository) as T
+        } else if (modelClass.isAssignableFrom(DetailViewModel::class.java)) {
+            return DetailViewModel(repository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }

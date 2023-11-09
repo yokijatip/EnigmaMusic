@@ -41,4 +41,82 @@
     <string name="sharkbite_album">Sharkbite</string>
     <string name="weezer_album">Make Believe</string>
     <string name="the_smashing_pumpkins_album">Mellon Collie</string>
+
+    <!--    Lyrics -->
+    <string name="the_smashing_pumpkins_lyrics">
+        Shakedown, 1979
+        Cool kids never have the time
+        On a live wire right up off the street
+        You and I should meet
+        June bug skipping like a stone
+        With the headlights pointed at the dawn
+        We were sure wed never see an end to it all
+    </string>
+
+    <string name="asking_alexandria_lyrics">
+        I can help you through this
+        But you have to take my hand
+        I can take you home
+        Take my hand, take my hand
+    </string>
+
+    <string name="billfold_lyrics">
+        Terngiang dua bisikan di telinga ku
+        Takkan mampu merubah semua waktu
+        Dan lihatlah diri ku disini kan berdiri menatap mu
+    </string>
+
+    <string name="dmasiv_lyrics">
+        Selama aku masih bisa bernafas
+        Masih sanggup berjalan kukan slalu memujamu
+        Meski ku tak tahu lagi engkau ada dimana
+        Dengarkan aku kumerindukanmu
+    </string>
+
+    <string name="the_walters_lyrics">
+        But I love you so (ooh-ooh)
+        I love you so (ooh-ooh)
+        I love you so (ooh-ooh)
+        I love you so (ooh-ooh)
+    </string>
+
+    <string name="outright_lyrics">
+        I SEE YOUR EYES
+        WITH MY RESPECT
+        THERE ARE SO BRIGHT
+        THAT LIGHT SHINE THROUGH
+        INSIDE MY HEART
+        YOU LOOK PERFECT
+        YOU NEVER CHANGE
+        WITH ANYTHING
+    </string>
+
+    <string name="savage_lyrics">
+        I buy a new car for the bitch (For real)
+        I tear down the mall with the bitch (For real)
+        You cannot even talk to the bitch (No)
+        She fucking with bosses and shit (On God)
+        I pull up in Raris and shit (Skrrr)
+    </string>
+
+    <string name="revenge_the_fate_lyrics">
+        Katakan apa yang sebenarnya telah terjadi
+        Hingga kau tega tebarkan debu neraka
+        Ku hanya ingin mengukir kesucian
+        Dan kau pun hancurkan
+    </string>
+
+    <string name="sharkbite_lyrics">
+        The words you speak destroy our world
+        You never learn youre always wanting more
+        This misery is never let me free
+    </string>
+
+    <string name="weezer_lyrics">
+        When youre on a holiday
+        You cant find the words to say
+        All the things that come to you
+        And I wanna feel it too
+    </string>
+
 </resources>

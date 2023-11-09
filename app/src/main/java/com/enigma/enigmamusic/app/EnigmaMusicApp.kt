@@ -10,12 +10,15 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.enigma.enigmamusic.ui.component.BottomNavigation
 import com.enigma.enigmamusic.ui.navigation.Screen
+import com.enigma.enigmamusic.ui.screen.detail.DetailScreen
 import com.enigma.enigmamusic.ui.screen.home.HomeScreen
 import com.enigma.enigmamusic.ui.screen.profile.ProfileScreen
 import com.enigma.enigmamusic.ui.screen.search.SearchScreen
@@ -56,6 +59,19 @@ fun EnigmaMusicApp(
 
             composable(Screen.Profile.route) {
                 ProfileScreen()
+            }
+
+            composable(
+                route = Screen.DetailMusic.route,
+                arguments = listOf(navArgument("musicId") { type = NavType.LongType }),
+            ) {
+                val id = it.arguments?.getLong("musicId") ?: -1L
+                DetailScreen(
+                    musicId = id,
+                    navigateBack = {
+                        navController.navigateUp()
+                    }
+                )
             }
 
 
