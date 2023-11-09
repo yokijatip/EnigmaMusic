@@ -5,5 +5,6 @@ data class Response(
     val image: Int,
     val song: String,
     val artist: String,
-    val album: String
+    val album: String,
+    val lyric: String? = null
 )

@@ -55,14 +55,18 @@ fun DetailScreen(
 
             is UiState.Success -> {
                 val data = uiState.data
-                DetailContent(
-                    data.musicList.image,
-                    data.musicList.song,
-                    data.musicList.artist,
-                    data.musicList.album,
-                    onBackClick = navigateBack,
-                )
+                data.musicList.lyric?.let {
+                    DetailContent(
+                        data.musicList.image,
+                        data.musicList.song,
+                        data.musicList.artist,
+                        data.musicList.album,
+                        it,
+                        onBackClick = navigateBack,
+                    )
+                }
             }
+
             is UiState.Error -> {}
         }
     }
@@ -74,6 +78,7 @@ fun DetailContent(
     song: String,
     artists: String,
     album: String,
+    lyric: String,
     onBackClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -88,7 +93,9 @@ fun DetailContent(
             Icon(
                 Icons.Default.ArrowBack,
                 contentDescription = null,
-                modifier = modifier.padding(vertical = 8.dp).clickable { onBackClick() }
+                modifier = modifier
+                    .padding(vertical = 8.dp)
+                    .clickable { onBackClick() }
             )
 
             Spacer(
@@ -140,7 +147,7 @@ fun DetailContent(
             )
 
             Text(
-                text = "Lyrics",
+                text = "Lyric",
                 overflow = TextOverflow.Ellipsis,
                 style = MaterialTheme.typography.titleLarge.copy(
                     fontWeight = FontWeight.ExtraBold,
@@ -151,7 +158,7 @@ fun DetailContent(
             )
 
             Text(
-                text = "asodjasoidjaojndfsoifjsadmofhopw8einf ipoukjsnfi sadnfiuansdf abus bkjsdf ijsfiuwnfoaocas hdfhfsd fhisudhf iahfhuia sdghf iuahsdfsdgf uyasfg sjfbsdfhu f ",
+                text = lyric,
                 textAlign = TextAlign.Justify,
                 style = MaterialTheme.typography.labelMedium.copy(
                     fontWeight = FontWeight.SemiBold,
@@ -174,6 +181,7 @@ fun DetailContentPreview() {
             song = "1979",
             artists = "The Smashing Pumpkins",
             album = "Melon Collie and The Infinite Sadness",
+            lyric = "Senggol dong duda pir awwww",
             onBackClick = { /*TODO*/ })
     }
 }
