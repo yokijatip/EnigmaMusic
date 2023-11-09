@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Enigma Music</string>
+
+    <!--    Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+
+    <!--    Song List -->
+    <string name="asking_alexandria_song">A Prophecy</string>
+    <string name="billfold_song">Abaikan</string>
+    <string name="dmasiv_song">Merindukanmu</string>
+    <string name="the_walters_song">I Love You So</string>
+    <string name="outright_song">My Truth</string>
+    <string name="savage_song">Bank Account</string>
+    <string name="revenge_the_fate_song">Pembalasan</string>
+    <string name="sharkbite_song">Set Us Free</string>
+    <string name="weezer_song">Island In The Sun</string>
+    <string name="the_smashing_pumpkins_song">1979</string>
+
+    <!--    Artist List -->
+    <string name="asking_alexandria">Asking Alexandria</string>
+    <string name="billfold">Billfold</string>
+    <string name="dmasiv">D Masive</string>
+    <string name="the_walters">The Walters</string>
+    <string name="outright">Outright</string>
+    <string name="savage">21 Savage</string>
+    <string name="revenge">Revenge The Fate</string>
+    <string name="sharkbite">Sharkbite</string>
+    <string name="weezer">Weezer</string>
+    <string name="the_smashing_pumpkins">The Smashing Pumpkins</string>
+
+    <!--    Album List -->
+    <string name="asking_alexandria_album">Stand Up And Scream</string>
+    <string name="billfold_album">Brave</string>
+    <string name="dmasiv_album">Perjalanan</string>
+    <string name="the_walters_album">Young Men</string>
+    <string name="outright_album">Bloody Board Destruction</string>
+    <string name="savage_album">Her Loss</string>
+    <string name="revenge_album">Kashmir</string>
+    <string name="sharkbite_album">Sharkbite</string>
+    <string name="weezer_album">Make Believe</string>
+    <string name="the_smashing_pumpkins_album">Mellon Collie</string>
+</resources>
